@@ -1,0 +1,554 @@
+object RptAbastecimentos: TRptAbastecimentos
+  Left = 0
+  Top = 0
+  Caption = 'RptAbastecimentos'
+  ClientHeight = 497
+  ClientWidth = 921
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RLReport1: TRLReport
+    Left = 8
+    Top = 8
+    Width = 794
+    Height = 1123
+    DataSource = DSRpt
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    object RLBand1: TRLBand
+      Left = 38
+      Top = 38
+      Width = 718
+      Height = 43
+      BandType = btHeader
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = False
+      Borders.DrawRight = False
+      Borders.DrawBottom = True
+      Borders.FixedBottom = True
+      object RLLabel5: TRLLabel
+        Left = 0
+        Top = 0
+        Width = 65
+        Height = 16
+        Caption = 'SISTEMA:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLLabel12: TRLLabel
+        Left = 81
+        Top = 0
+        Width = 60
+        Height = 16
+        Caption = 'ControlAb'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object RLLabel7: TRLLabel
+        Left = 0
+        Top = 16
+        Width = 81
+        Height = 16
+        Caption = 'RELAT'#211'RIO:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLLabel22: TRLLabel
+        Left = 81
+        Top = 16
+        Width = 164
+        Height = 16
+        Caption = 'Controle de Abastecimentos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object RLLDtHora: TRLLabel
+        Left = 524
+        Top = 3
+        Width = 66
+        Height = 13
+        Caption = 'Data/Hora:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLSysData: TRLSystemInfo
+        Left = 596
+        Top = 3
+        Width = 34
+        Height = 13
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Text = ''
+      end
+      object RLSysHora: TRLSystemInfo
+        Left = 684
+        Top = 3
+        Width = 34
+        Height = 13
+        Alignment = taRightJustify
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Info = itHour
+        ParentFont = False
+        Text = ''
+      end
+      object RLLabel39: TRLLabel
+        Left = 549
+        Top = 20
+        Width = 41
+        Height = 13
+        Caption = 'P'#225'gina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLSystemInfo1: TRLSystemInfo
+        Left = 596
+        Top = 20
+        Width = 72
+        Height = 13
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Info = itPageNumber
+        ParentFont = False
+        Text = ''
+      end
+      object RLLabel38: TRLLabel
+        Left = 631
+        Top = 20
+        Width = 17
+        Height = 13
+        Caption = 'de'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLSystemInfo2: TRLSystemInfo
+        Left = 672
+        Top = 20
+        Width = 92
+        Height = 13
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Info = itLastPageNumber
+        ParentFont = False
+        Text = ''
+      end
+    end
+    object RLGroup1: TRLGroup
+      Left = 38
+      Top = 81
+      Width = 718
+      Height = 113
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = False
+      Borders.DrawRight = False
+      Borders.DrawBottom = True
+      Borders.FixedBottom = True
+      DataFields = 'DATA'
+      object RLBand2: TRLBand
+        Left = 0
+        Top = 0
+        Width = 718
+        Height = 49
+        BeforePrint = RLBand2BeforePrint
+        object RLLabel1: TRLLabel
+          Left = 0
+          Top = 0
+          Width = 33
+          Height = 16
+          Caption = 'Data'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLDBText1: TRLDBText
+          Left = 0
+          Top = 16
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'DATA'
+          DataSource = DSRpt
+          Text = ''
+        end
+        object RLDBText2: TRLDBText
+          Left = 99
+          Top = 16
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'TANQUE'
+          DataSource = DSRpt
+          Text = ''
+        end
+        object RLLabel2: TRLLabel
+          Left = 99
+          Top = 0
+          Width = 52
+          Height = 16
+          Caption = 'Tanque'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLLabel3: TRLLabel
+          Left = 198
+          Top = 0
+          Width = 49
+          Height = 16
+          Caption = 'Bomba'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLDBText3: TRLDBText
+          Left = 198
+          Top = 16
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'BOMBA'
+          DataSource = DSRpt
+          Text = ''
+        end
+        object RLLabel4: TRLLabel
+          Left = 297
+          Top = 0
+          Width = 39
+          Height = 16
+          Caption = 'Litros'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLDBText4: TRLDBText
+          Left = 297
+          Top = 16
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'LITROS'
+          DataSource = DSRpt
+          Text = ''
+        end
+        object RLLabel9: TRLLabel
+          Left = 396
+          Top = 0
+          Width = 38
+          Height = 16
+          Caption = 'Valor'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLDBText5: TRLDBText
+          Left = 396
+          Top = 16
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'VALOR_ABASTECIDO'
+          DataSource = DSRpt
+          Text = ''
+        end
+        object RLLabel15: TRLLabel
+          Left = 495
+          Top = 0
+          Width = 54
+          Height = 16
+          Caption = 'Imposto'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLDBText6: TRLDBText
+          Left = 495
+          Top = 16
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'VALOR_IMPOSTO'
+          DataSource = DSRpt
+          Text = ''
+        end
+        object RLLabel18: TRLLabel
+          Left = 549
+          Top = 3
+          Width = 58
+          Height = 13
+          Caption = '(Aliq. 13%)'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+      end
+      object RLBand3: TRLBand
+        Left = 0
+        Top = 49
+        Width = 718
+        Height = 61
+        BandType = btSummary
+        Borders.Sides = sdCustom
+        Borders.DrawLeft = False
+        Borders.DrawTop = True
+        Borders.DrawRight = False
+        Borders.DrawBottom = True
+        Borders.FixedTop = True
+        Borders.FixedBottom = True
+        object RLDBResult1: TRLDBResult
+          Left = 438
+          Top = 22
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'VALOR_ABASTECIDO'
+          DataSource = DSRpt
+          DisplayMask = 'R$ ,0.00'
+          Info = riSum
+          Text = ''
+          OnCompute = RLDBResult1Compute
+        end
+        object RLLabel6: TRLLabel
+          Left = 396
+          Top = 22
+          Width = 42
+          Height = 16
+          Caption = 'Valor:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLLabel10: TRLLabel
+          Left = 0
+          Top = 0
+          Width = 161
+          Height = 19
+          Caption = 'Totalizadores do Dia'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLLabel13: TRLLabel
+          Left = 537
+          Top = 22
+          Width = 58
+          Height = 16
+          Caption = 'Imposto:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLDBResult3: TRLDBResult
+          Left = 595
+          Top = 22
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'VALOR_IMPOSTO'
+          DataSource = DSRpt
+          DisplayMask = 'R$ ,0.00'
+          Info = riSum
+          Text = ''
+          OnCompute = RLDBResult3Compute
+        end
+        object RLLabel16: TRLLabel
+          Left = 254
+          Top = 22
+          Width = 43
+          Height = 16
+          Caption = 'Litros:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object RLDBResult2: TRLDBResult
+          Left = 297
+          Top = 22
+          Width = 89
+          Height = 16
+          AutoSize = False
+          DataField = 'LITROS'
+          DataSource = DSRpt
+          DisplayMask = '0.00 L'
+          Info = riSum
+          Text = ''
+          OnCompute = RLDBResult2Compute
+        end
+      end
+    end
+    object RLBand4: TRLBand
+      Left = 38
+      Top = 194
+      Width = 718
+      Height = 61
+      BandType = btSummary
+      BeforePrint = RLBand4BeforePrint
+      object RLLabel11: TRLLabel
+        Left = 0
+        Top = 0
+        Width = 196
+        Height = 19
+        Caption = 'Totalizadores do Per'#237'odo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLLabel8: TRLLabel
+        Left = 396
+        Top = 22
+        Width = 42
+        Height = 16
+        Caption = 'Valor:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLLabel14: TRLLabel
+        Left = 537
+        Top = 22
+        Width = 58
+        Height = 16
+        Caption = 'Imposto:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLLTotPerValor: TRLLabel
+        Left = 438
+        Top = 22
+        Width = 89
+        Height = 16
+        AutoSize = False
+      end
+      object RLLTotPerImposto: TRLLabel
+        Left = 595
+        Top = 22
+        Width = 89
+        Height = 16
+        AutoSize = False
+      end
+      object RLLabel17: TRLLabel
+        Left = 254
+        Top = 22
+        Width = 43
+        Height = 16
+        Caption = 'Litros:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLLTotPerLitros: TRLLabel
+        Left = 297
+        Top = 22
+        Width = 89
+        Height = 16
+        AutoSize = False
+      end
+    end
+  end
+  object FDQRpt: TFDQuery
+    Left = 824
+    Top = 32
+  end
+  object DSRpt: TDataSource
+    DataSet = FDQRpt
+    Left = 856
+    Top = 32
+  end
+end

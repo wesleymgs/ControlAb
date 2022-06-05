@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F8D68E91-763C-47D9-8BCC-4C5B8CA9C230}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="project\ControlAb.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="project\Test\ControlAbTests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ControlAb">
+        <MSBuild Projects="project\ControlAb.dproj"/>
+    </Target>
+    <Target Name="ControlAb:Clean">
+        <MSBuild Projects="project\ControlAb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ControlAb:Make">
+        <MSBuild Projects="project\ControlAb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ControlAbTests">
+        <MSBuild Projects="project\Test\ControlAbTests.dproj"/>
+    </Target>
+    <Target Name="ControlAbTests:Clean">
+        <MSBuild Projects="project\Test\ControlAbTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ControlAbTests:Make">
+        <MSBuild Projects="project\Test\ControlAbTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ControlAb;ControlAbTests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ControlAb:Clean;ControlAbTests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ControlAb:Make;ControlAbTests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
