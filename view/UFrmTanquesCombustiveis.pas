@@ -16,7 +16,6 @@ type
     DBEDescricao: TDBEdit;
     GBoxVisualizacao: TGroupBox;
     DBGrid1: TDBGrid;
-    procedure FormShow(Sender: TObject);
     procedure SBNovoClick(Sender: TObject);
     procedure SBEditarClick(Sender: TObject);
   private
@@ -42,14 +41,6 @@ begin
                              .GetTipoFDQuery;
 
   Self.ShowModal;
-end;
-
-procedure TFrmTanquesCombustiveis.FormShow(Sender: TObject);
-begin
-  TFDQuery(DSBase.DataSet).Close;
-  TFDQuery(DSBase.DataSet).SQL.Clear;
-  TFDQuery(DSBase.DataSet).SQL.Add('SELECT * FROM TANQUES');
-  TFDQuery(DSBase.DataSet).Open;
 end;
 
 class function TFrmTanquesCombustiveis.New: TFrmTanquesCombustiveis;

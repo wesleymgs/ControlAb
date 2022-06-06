@@ -2,7 +2,6 @@ inherited FrmAbastecimento: TFrmAbastecimento
   Caption = 'Abastecimento'
   ClientHeight = 280
   ClientWidth = 497
-  OnShow = FormShow
   ExplicitWidth = 503
   ExplicitHeight = 309
   PixelsPerInch = 96
@@ -11,6 +10,7 @@ inherited FrmAbastecimento: TFrmAbastecimento
     Top = 239
     Width = 497
     TabOrder = 2
+    ExplicitTop = 239
     ExplicitWidth = 497
   end
   object GBoxDados: TGroupBox [1]

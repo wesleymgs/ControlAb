@@ -30,7 +30,6 @@ type
     function ConsultarDados: String;
     function PegarFiltros: String;
     procedure GerarRelatorio;
-    procedure FormShow(Sender: TObject);
     procedure DBLkpTanqueExit(Sender: TObject);
   private
     { Private declarations }
@@ -108,21 +107,6 @@ procedure TFrmFiltroRptAbastecimentos.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
   Action := CaFree;
-end;
-
-procedure TFrmFiltroRptAbastecimentos.FormShow(Sender: TObject);
-begin
-  TFDQuery(DSBomba.DataSet).Close;
-  TFDQuery(DSBomba.DataSet).SQL.Clear;
-  TFDQuery(DSBomba.DataSet).SQL.Add('SELECT * FROM BOMBAS');
-  TFDQuery(DSBomba.DataSet).Open;
-  TFDQuery(DSBomba.DataSet).FetchAll;
-
-  TFDQuery(DSTanque.DataSet).Close;
-  TFDQuery(DSTanque.DataSet).SQL.Clear;
-  TFDQuery(DSTanque.DataSet).SQL.Add('SELECT * FROM TANQUES');
-  TFDQuery(DSTanque.DataSet).Open;
-  TFDQuery(DSTanque.DataSet).FetchAll;
 end;
 
 procedure TFrmFiltroRptAbastecimentos.GerarRelatorio;

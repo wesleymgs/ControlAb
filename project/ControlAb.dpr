@@ -16,7 +16,8 @@ uses
   uAutoFree in '..\helper\uAutoFree.pas',
   UFrmFiltroRptAbastecimentos in '..\view\UFrmFiltroRptAbastecimentos.pas' {FrmFiltroRptAbastecimentos},
   UHelperMaskEdit in '..\helper\UHelperMaskEdit.pas',
-  URptAbastecimentos in '..\report\URptAbastecimentos.pas' {RptAbastecimentos};
+  URptAbastecimentos in '..\report\URptAbastecimentos.pas' {RptAbastecimentos},
+  UTipoTabela.Factory.Model in '..\model\UTipoTabela.Factory.Model.pas';
 
 {$R *.res}
 

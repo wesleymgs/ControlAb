@@ -2,7 +2,6 @@ inherited FrmTanquesCombustiveis: TFrmTanquesCombustiveis
   Caption = 'Tanques de Combust'#237'veis'
   ClientHeight = 330
   ClientWidth = 498
-  OnShow = FormShow
   ExplicitWidth = 504
   ExplicitHeight = 359
   PixelsPerInch = 96
@@ -10,9 +9,8 @@ inherited FrmTanquesCombustiveis: TFrmTanquesCombustiveis
   inherited PnlBotoes: TPanel
     Top = 289
     Width = 498
-    ExplicitLeft = 0
-    ExplicitTop = 252
-    ExplicitWidth = 497
+    ExplicitTop = 289
+    ExplicitWidth = 498
   end
   object GBoxDados: TGroupBox [1]
     Left = 8

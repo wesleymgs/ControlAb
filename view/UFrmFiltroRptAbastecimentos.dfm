@@ -15,7 +15,6 @@ object FrmFiltroRptAbastecimentos: TFrmFiltroRptAbastecimentos
   OldCreateOrder = False
   Position = poScreenCenter
   OnClose = FormClose
-  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object GroupBox1: TGroupBox

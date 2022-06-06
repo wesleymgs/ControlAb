@@ -14,6 +14,11 @@ type
     function GetFDConnection: TFDConnection;
   end;
 
+  IModelTabelaFactory = interface
+    ['{D2051DCD-A5FB-47AC-A113-6537AFAAC5E5}']
+    function GetTabela: TFDQuery;
+  end;
+
 implementation
 
 end.

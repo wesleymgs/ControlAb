@@ -21,7 +21,6 @@ type
     DSTanque: TDataSource;
     procedure SBNovoClick(Sender: TObject);
     procedure SBEditarClick(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
     FControllerConexao: IConexaoController;
@@ -53,21 +52,6 @@ begin
 
 
   Self.ShowModal;
-end;
-
-procedure TFrmBombasCombustiveis.FormShow(Sender: TObject);
-begin
-  inherited;
-  TFDQuery(DSTanque.DataSet).Close;
-  TFDQuery(DSTanque.DataSet).SQL.Clear;
-  TFDQuery(DSTanque.DataSet).SQL.Add('SELECT * FROM TANQUES');
-  TFDQuery(DSTanque.DataSet).Open;
-  TFDQuery(DSTanque.DataSet).FetchAll;
-
-  TFDQuery(DSBase.DataSet).Close;
-  TFDQuery(DSBase.DataSet).SQL.Clear;
-  TFDQuery(DSBase.DataSet).SQL.Add('SELECT * FROM BOMBAS');
-  TFDQuery(DSBase.DataSet).Open;
 end;
 
 class function TFrmBombasCombustiveis.New: TFrmBombasCombustiveis;

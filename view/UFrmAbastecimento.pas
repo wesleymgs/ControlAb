@@ -25,7 +25,6 @@ type
     DBGrid1: TDBGrid;
     DBLkpBomba: TDBLookupComboBox;
     DSBomba: TDataSource;
-    procedure FormShow(Sender: TObject);
     procedure DBEValorExit(Sender: TObject);
     function CalcularValorImposto(AnVlrAbastecido: Double): Double;
     procedure SBNovoClick(Sender: TObject);
@@ -73,20 +72,6 @@ begin
 
 
   Self.ShowModal;
-end;
-
-procedure TFrmAbastecimento.FormShow(Sender: TObject);
-begin
-  TFDQuery(DSBomba.DataSet).Close;
-  TFDQuery(DSBomba.DataSet).SQL.Clear;
-  TFDQuery(DSBomba.DataSet).SQL.Add('SELECT * FROM BOMBAS');
-  TFDQuery(DSBomba.DataSet).Open;
-  TFDQuery(DSBomba.DataSet).FetchAll;
-
-  TFDQuery(DSBase.DataSet).Close;
-  TFDQuery(DSBase.DataSet).SQL.Clear;
-  TFDQuery(DSBase.DataSet).SQL.Add('SELECT * FROM ABASTECIMENTOS ORDER BY DATA DESC');
-  TFDQuery(DSBase.DataSet).Open;
 end;
 
 class function TFrmAbastecimento.New: TFrmAbastecimento;

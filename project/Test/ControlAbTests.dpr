@@ -26,7 +26,8 @@ uses
   UTipoTabela.Factory.Controller in '..\..\factory\UTipoTabela.Factory.Controller.pas',
   UIConexao in '..\..\interface\UIConexao.pas',
   UITabelaFactory in '..\..\interface\UITabelaFactory.pas',
-  UFrmBase in '..\..\view\UFrmBase.pas' {FrmBase};
+  UFrmBase in '..\..\view\UFrmBase.pas' {FrmBase},
+  UTipoTabela.Factory.Model in '..\..\model\UTipoTabela.Factory.Model.pas';
 
 {$R *.res}
 

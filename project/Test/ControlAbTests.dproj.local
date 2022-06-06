@@ -13,5 +13,6 @@
     <Transaction>2022/06/05 17:50:18.000.497,=C:\FORTES\ControlAb\interface\UITabelaFactory.pas</Transaction>
     <Transaction>2022/06/05 17:50:18.000.453,=C:\FORTES\ControlAb\interface\UIConexao.pas</Transaction>
     <Transaction>2022/06/05 17:50:49.000.054,=C:\FORTES\ControlAb\view\UFrmBase.pas</Transaction>
+    <Transaction>2022/06/06 00:13:52.698,=C:\FORTES\ControlAb\model\UTipoTabela.Factory.Model.pas</Transaction>
   </Transactions>
 </BorlandProject>

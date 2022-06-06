@@ -2,7 +2,6 @@ inherited FrmBombasCombustiveis: TFrmBombasCombustiveis
   Caption = 'Bombas de Combust'#237'veis'
   ClientHeight = 331
   ClientWidth = 497
-  OnShow = FormShow
   ExplicitWidth = 503
   ExplicitHeight = 360
   PixelsPerInch = 96
@@ -10,7 +9,6 @@ inherited FrmBombasCombustiveis: TFrmBombasCombustiveis
   inherited PnlBotoes: TPanel
     Top = 290
     Width = 497
-    ExplicitLeft = 0
     ExplicitTop = 290
     ExplicitWidth = 497
   end
