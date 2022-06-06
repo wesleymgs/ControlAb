@@ -10,7 +10,7 @@ uses
 type
   TControllerConexao = class(TInterfacedObject, IConexaoController)
   private
-    FTipoQuery: TFDQuery;
+    FQueryTabela: TFDQuery;
 
     function SetFDQuery(AoQuery: TTipoFDQuery): IConexaoController;
     function GetTipoFDQuery: TFDQuery;
@@ -43,7 +43,7 @@ end;
 
 function TControllerConexao.GetTipoFDQuery: TFDQuery;
 begin
-  Result := FTipoQuery;
+  Result := FQueryTabela;
 end;
 
 class function TControllerConexao.New: IConexaoController;
@@ -53,12 +53,8 @@ end;
 
 function TControllerConexao.SetFDQuery(AoQuery: TTipoFDQuery): IConexaoController;
 begin
-  Result := Self;
-  case (AoQuery) of
-    tFDQAbastecimentos: FTipoQuery := TTabelaFactory.New.TabelaAbastecimentos.GetTabela;
-    tFDQTanques:        FTipoQuery := TTabelaFactory.New.TabelaTanques.GetTabela;
-    tFDQBombas:         FTipoQuery := TTabelaFactory.New.TabelaBombas.GetTabela;
-  end;
+  Result       := Self;
+  FQueryTabela := TTabelaFactory.New.SetTabela(AoQuery).GetTabela;
 end;
 
 end.

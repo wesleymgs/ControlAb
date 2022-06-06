@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2022/06/05 15:40:13.000.414,C:\Users\Wesley\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\FORTES\ControlAb\FortesControlAb.groupproj</Transaction>
+    <Transaction>2022/06/05 15:40:13.000.414,C:\FORTES\ControlAb\FortesControlAb.groupproj=C:\Users\Wesley\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="C:\FORTES\ControlAb\project\Test\ControlAbTests.dproj"/>
+		<Projects ActiveProject="C:\FORTES\ControlAb\project\ControlAb.dproj"/>
 	</Default.Personality>
 </BorlandProject>

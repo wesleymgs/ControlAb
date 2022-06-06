@@ -5,7 +5,7 @@ interface
 uses
   FireDAC.Comp.Client, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet,
-  Data.DB, UDM, UITabelaFactory;
+  Data.DB, UDM, UITabelaFactory, UIConexao;
 
 type
   TTabelaFactory = class(TInterfacedObject, ITabelaFactory)
@@ -14,9 +14,7 @@ type
 
     function GetTabela: TFDQuery;
     function GetFDConnection: TFDConnection;
-    function TabelaAbastecimentos: ITabelaFactory;
-    function TabelaTanques: ITabelaFactory;
-    function TabelaBombas: ITabelaFactory;
+    function SetTabela(AoQuery: TTipoFDQuery): ITabelaFactory;
   public
     constructor Create;
     destructor Destroy; override;
@@ -53,22 +51,14 @@ begin
   Result := Self.Create;
 end;
 
-function TTabelaFactory.TabelaAbastecimentos: ITabelaFactory;
+function TTabelaFactory.SetTabela(AoQuery: TTipoFDQuery): ITabelaFactory;
 begin
   Result := Self;
-  FDQTabela := DM.FDQAbastecimentos;
-end;
-
-function TTabelaFactory.TabelaBombas: ITabelaFactory;
-begin
-  Result := Self;
-  FDQTabela := DM.FDQBombas;
-end;
-
-function TTabelaFactory.TabelaTanques: ITabelaFactory;
-begin
-  Result := Self;
-  FDQTabela := DM.FDQTanques;
+  case (AoQuery) of
+    tFDQAbastecimentos: FDQTabela := DM.FDQAbastecimentos;
+    tFDQTanques:        FDQTabela := DM.FDQTanques;
+    tFDQBombas:         FDQTabela := DM.FDQBombas;
+  end;
 end;
 
 end.
