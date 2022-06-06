@@ -20,8 +20,8 @@
     <Transaction>2022/06/04 02:35:12.000.175,=C:\FORTES\ControlAb\interface\UIConexao.pas</Transaction>
     <Transaction>2022/06/04 02:35:23.000.748,=C:\FORTES\ControlAb\model\UConexao.Model.pas</Transaction>
     <Transaction>2022/06/04 02:55:51.000.121,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
-    <Transaction>2022/06/04 02:57:08.000.385,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\view\UFrmAbastecimento.pas</Transaction>
     <Transaction>2022/06/04 02:57:08.000.385,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmAbastecimento.dfm</Transaction>
+    <Transaction>2022/06/04 02:57:08.000.385,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\view\UFrmAbastecimento.pas</Transaction>
     <Transaction>2022/06/04 03:46:36.000.401,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
     <Transaction>2022/06/04 03:47:02.000.200,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\controller\UConexao.Controller.pas</Transaction>
     <Transaction>2022/06/04 04:28:06.000.226,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
@@ -29,22 +29,25 @@
     <Transaction>2022/06/04 04:32:15.000.822,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
     <Transaction>2022/06/04 04:33:00.000.332,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\interface\UITabelaFactory.pas</Transaction>
     <Transaction>2022/06/04 16:35:34.000.509,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
-    <Transaction>2022/06/04 16:37:24.000.363,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmTanquesCombustiveis.dfm</Transaction>
     <Transaction>2022/06/04 16:37:24.000.363,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\view\UFrmTanquesCombustiveis.pas</Transaction>
+    <Transaction>2022/06/04 16:37:24.000.363,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmTanquesCombustiveis.dfm</Transaction>
     <Transaction>2022/06/04 21:05:29.000.790,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
-    <Transaction>2022/06/04 21:05:52.000.319,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmBase.dfm</Transaction>
     <Transaction>2022/06/04 21:05:52.000.319,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\view\UFrmBase.pas</Transaction>
+    <Transaction>2022/06/04 21:05:52.000.319,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmBase.dfm</Transaction>
     <Transaction>2022/06/04 21:53:58.000.946,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
-    <Transaction>2022/06/04 21:54:47.000.121,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\view\UFrmBombasCombustiveis.pas</Transaction>
     <Transaction>2022/06/04 21:54:47.000.121,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmBombasCombustiveis.dfm</Transaction>
+    <Transaction>2022/06/04 21:54:47.000.121,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\view\UFrmBombasCombustiveis.pas</Transaction>
     <Transaction>2022/06/04 23:01:27.000.182,=C:\FORTES\ControlAb\helper\uAutoFree.pas</Transaction>
     <Transaction>2022/06/04 23:40:32.000.915,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
-    <Transaction>2022/06/04 23:41:31.000.530,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmFiltroRptAbastecimentos.dfm</Transaction>
     <Transaction>2022/06/04 23:41:31.000.530,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\view\UFrmFiltroRptAbastecimentos.pas</Transaction>
+    <Transaction>2022/06/04 23:41:31.000.530,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\view\UFrmFiltroRptAbastecimentos.dfm</Transaction>
     <Transaction>2022/06/05 10:56:09.000.028,=C:\FORTES\ControlAb\helper\UHelperMaskEdit.pas</Transaction>
     <Transaction>2022/06/05 11:23:37.000.934,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
-    <Transaction>2022/06/05 11:25:26.000.894,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\report\URptAbastecimentos.pas</Transaction>
     <Transaction>2022/06/05 11:25:26.000.894,C:\FORTES\ControlAb\project\Unit1.dfm=C:\FORTES\ControlAb\report\URptAbastecimentos.dfm</Transaction>
+    <Transaction>2022/06/05 11:25:26.000.894,C:\FORTES\ControlAb\project\Unit1.pas=C:\FORTES\ControlAb\report\URptAbastecimentos.pas</Transaction>
+    <Transaction>2022/06/05 22:27:16.169,=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
+    <Transaction>2022/06/05 22:28:24.556,C:\FORTES\ControlAb\model\UConsultas.Model.pas=C:\FORTES\ControlAb\project\Unit1.pas</Transaction>
+    <Transaction>2022/06/05 22:53:17.735,C:\FORTES\ControlAb\model\UConsultas.Model.pas=</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5"/>

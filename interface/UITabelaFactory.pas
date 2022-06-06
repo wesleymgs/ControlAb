@@ -10,9 +10,8 @@ uses
 type
   ITabelaFactory = interface
     ['{5D9EA984-E1E5-4AA8-842E-D3F6E4A36C99}']
-    function GetTabela: TFDQuery;
+    function GetTabela(AoQuery: TTipoFDQuery): TFDQuery;
     function GetFDConnection: TFDConnection;
-    function SetTabela(AoQuery: TTipoFDQuery): ITabelaFactory;
   end;
 
 implementation

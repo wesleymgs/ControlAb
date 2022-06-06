@@ -54,7 +54,7 @@ end;
 function TControllerConexao.SetFDQuery(AoQuery: TTipoFDQuery): IConexaoController;
 begin
   Result       := Self;
-  FQueryTabela := TTabelaFactory.New.SetTabela(AoQuery).GetTabela;
+  FQueryTabela := TTabelaFactory.New.GetTabela(AoQuery);
 end;
 
 end.
